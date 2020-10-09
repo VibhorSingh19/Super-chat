@@ -6,6 +6,13 @@ import 'firebase/firestore';
 import 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
+
+firebase.initialiseApp({
+
+})
+const auth = firebase.auth();
+const firestore = firebase.firestore();
+
 function App() {
   return (
     <div className="App">
